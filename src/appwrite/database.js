@@ -1,5 +1,5 @@
 import config from "../config/config";
-import { Client, Database, Query } from "appwrite";
+import { Client, Databases, Query, TablesDB } from "appwrite";
 
 export class DatabaseService {
     client = new Client();

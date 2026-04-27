@@ -11,7 +11,7 @@ export class StorageService {
             .setEndpoint(config.appwriteUrl)
             .setProject(config.appwriteProjectId);
 
-        this.storage = new Storage(client);
+        this.storage = new Storage(this.client);
     }
 
     async uploadFile(file) {
@@ -51,5 +51,5 @@ export class StorageService {
 
 }
 
-const storageServive = new StorageService();
+const storageService = new StorageService();
 export default storageService;
